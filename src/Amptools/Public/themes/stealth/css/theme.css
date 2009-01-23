@@ -1,0 +1,295 @@
+
+@import url(../../../stylesheets/layout.css);
+@import url(syntax-highlighter.css);
+
+body {
+	background: #111;
+	color: #888;
+	line-height: 140%;
+}
+
+a {
+	color: #efefef;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color:orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #ccc;
+}
+
+blockquote {
+	background: #222;
+	padding: 10px 30px;
+	quotes: "\201C" "\201D";
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-style: italic;
+}
+
+blockquote:after,
+blockquote:before {
+	content: '"';
+	margin: 0px 0px -20px -20px;
+	font-size: 170%;
+	display: block;
+	font-family: Tahoma;
+}
+
+blockquote:after {
+	text-align: right;
+	margin: -10px 0px 0px 10px;
+}
+
+.header, .footer, .body {
+	background: #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #666;
+	border-top-color: #999;
+	border-bottom-color:#333;
+	padding: 5px;
+	overflow: visible;
+	
+}
+
+
+#header, #footer {
+	margin: 10px 0px;
+	border-bottom-color: #666;	
+}
+
+
+#body {
+	background: #333;
+	border: 1px solid #666;
+	border-top: none;
+	border-bottom: none;	
+}
+
+.column {
+	margin-left: 10px;	
+}
+
+.behavior-curved {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+#body .section,
+#body .article {
+	background: #111;
+	padding: 5px;
+	border: 1px solid #fff;
+}
+
+#header, #footer, #body {
+	float: left;
+	width: 1000px;
+	clear: both;
+}
+
+#header h1, 
+#header .nav {
+	margin: 0px 10px;
+}
+
+#header h1 {
+		
+}
+
+#header h1 a {
+	background: transparent url(../images/logo.png) no-repeat;
+	width: 150px;
+	height: 93px;	
+}
+
+.body .article h2 {
+	font-size: 9pt;	
+}
+
+.nav li,
+nav li {
+	margin-right: 10px;
+	font-family: "Segoe UI", Tahoma;
+	font-size: 0.7em;
+	text-transform: capitalize;
+}
+
+.nav li a {
+	background: transparent url(../images/header-nav-bg.png) repeat-x;
+	color: #ddd;
+	padding: 5px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	clear: both;
+}
+
+.nav li a:hover,
+.nav li a:active {
+	background: #222;	
+}
+
+.nav li li a,
+.nav li.last a {
+	background: transparent;
+	color: #ccc;
+	width: 100%;		
+}
+
+.nav li.last a {
+	float: none;
+	display: inline;
+}
+
+.nav li ul {
+	clear: both;	
+}
+
+nav li:hover ul,
+.nav li:hover ul,
+.nav .hover ul {
+	background: #444;
+	margin: 0px;
+}
+
+
+
+
+h1 {
+	margin-bottom: 10px;
+}
+
+h1 + h2 {
+	margin-top: -10px;
+}
+
+
+
+#social-networking a {
+	font-size: 9pt;	
+	display: block;
+	height: 50px;
+	width: 52px;
+	position: relative;
+	float: left;
+}
+
+#social-networking a span {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	display: block;
+	width: 100%;
+	float: left;
+}
+
+.data-grid {
+	border-bottom: 1px solid #111;
+}
+
+.data-grid tr:hover td {
+	background: #555;
+}
+
+.data-grid th {
+	background: #222;
+	border: 1px solid #222;
+	border-bottom-color: #111;
+	font-size: 90%;
+}
+
+.data-grid td {
+	border-right: solid 1px #111;
+	border-left: solid 1px #666;
+	background: #444;
+	font-size: 90%;
+}
+
+.details-view li {
+	display: block;
+	float: left;
+	clear: both;
+	padding: 4px 10px;
+	font-size: 85%;
+}
+
+
+fieldset {
+	border: 1px solid #777;
+	padding: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+legend {
+	border: 1px solid #777;
+	padding: 5px;
+	background: #222;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+label {
+	font-weight: bolder;
+	color: #999;
+	display: block;
+	float: left;
+	width: 150px;
+
+}
+
+label:after {
+	content: ":";	
+}
+
+input {
+	color: #fff;
+	background: #222;
+	border: solid 1px #fff;
+}
+
+input[type="text"] {
+	padding: 2px 5px;
+	background: #222;
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #666;
+	border-top-color: #111;
+	border-bottom-color:#999;
+}
+
+input[type="submit"],
+button,
+.button {
+	padding: 2px 5px;
+	background: #444;
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #666;
+	border-top-color: #999;
+	border-bottom-color:#111;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.button:hover {
+	background: #555;
+}
+
+.button:active,
+button:active,
+input[type="submit"]:active {
+	background: #222;
+	border-top-color: #111;
+	border-bottom-color:#999;
+}
+

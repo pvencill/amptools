@@ -1,0 +1,129 @@
+﻿@import url(html5.css);
+
+/* Tags */
+body {
+	font-family: Segoe UI, Trebuchet MS;
+}
+
+h1, h2, h3, h4, h5, h6, .nav, nav {
+	font-family: Segoe Condensed, Tahoma;	
+}
+
+table th {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+table th,
+table td {
+	padding: 2px 5px;
+}
+
+p {
+	margin: 10px 5px;	
+	text-indent: 15px;
+}
+
+label {
+	overflow: visible;	
+}
+
+#page {
+	width: 1000px;	
+	margin: 0 auto;
+}
+
+.header h1 a {
+	display: block;	
+}
+
+.header h1 a span {
+	display: none;	
+}
+
+nav li > ul,
+.nav li > ul {
+	display: none;
+	width: 250px;
+	position: absolute;
+	clear: both;
+	top: 25px;
+	left: 0px;
+}
+
+nav li:hover > ul,
+.nav li:hover > ul,
+.nav .hover > ul {
+	display: block;	
+}
+
+.nav li li {
+	font-size: 80%;
+	clear: both;
+}
+
+.column  {
+	float: left;
+	overflow: visible;
+	margin: 10px;
+}
+
+.main,
+.main .section,
+.main .article {
+	width: 700px;	
+	margin-bottom: 10px;
+}
+
+.sidebar,
+.sidebar .section {
+	float: left;	
+	width: 240px;
+	margin-left: 10px;	
+	margin-bottom: 10px;
+}
+
+.body .section,
+.body .article {
+	float: left;
+	overflow: visible;		
+}
+
+
+
+.section object {
+	margin: 10px;	
+}
+
+ul.thumbnails {
+	width: 100%;
+	float: left;	
+}
+
+ul.thumbnails li {	
+	float: left;
+	width: auto;
+	padding: 3px;
+	display: block;
+}
+
+ul.thumbnails li a {
+	display: block;	
+	text-align: center;
+}
+
+.myspace {
+	background: transparent url(../images/social/myspace.png) no-repeat top center;	
+}
+
+.facebook {
+	background: transparent url(../images/social/facebook.png) no-repeat top center;	
+}
+
+.twitter {
+	background: transparent url(../images/social/twitter.png) no-repeat top center;	
+}
+
+.skype {
+	background: transparent url(../images/social/skype.png) no-repeat top center;		
+}

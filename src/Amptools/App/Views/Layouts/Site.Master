@@ -1,0 +1,126 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= ((ViewData != null && this.ViewData["Title"] != null) ? Html.Encode(ViewData["Title"]) : this.Page.Title) %></title>
+    <link rel="icon" type="image/x-icon" href="~/public/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="~/public/themes/stealth/css/theme.css"  />
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="~/themes/stealth/css/ie.css"  />
+	<![endif]-->
+	<asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+
+<body>
+	<xml:namespace ns = "urn: schemas-microsoft-com: VML" prefix = "v" />
+    <div id="canvas">
+        <div id="page">
+            <div id="header" class="section header behavior-curved">
+                <h1>
+					<a href="/"><span>Amptools.Net</span></a>
+				</h1>
+			</div>
+			<div id="site-nav" class="section nav">
+				<ul>
+					<li class="first">
+						<a href="/blog/index"><span>home</span></a>
+					</li>
+					<li>
+						<a href="/home/about"><span>about</span></a>
+					</li>
+					<li>
+						<a href="/home/contact"><span>contact</span></a>
+					</li>
+					<li>
+						<a href="/home/wiki"><span>wiki</span></a>
+					</li>
+					<li>
+						<a href="/home/projects"><span>projects</span></a>
+						<%--
+						<ul style="display: none">
+							<li>
+								<a href="/projects/index/amplify-net"><span>amplify</span></a>
+							</li>
+							<li>
+								<a href="/projects/index/twittern"><span>twittern</span></a>
+							</li>
+							<li>
+								<a href="/projects/index/ryuu"><span>ryuu (dragon)</span></a>
+							</li>
+							<li>
+								<a href="/projects/index/midori-ryuu"><span>midori ryuu (green dragon)</span></a>
+							</li>
+						</ul>
+						--%>
+					</li>
+					<li class="last">
+						  <%-- if (Html != null) { Html.RenderPartial("~/App/Views/Layouts/LoginUserControl.ascx"); } --%>
+					</li>
+				</ul>
+			</div>
+			<div id="body" class="section body">
+				<div class="column main">
+					<div class="section behavior-curved">
+						<h1>Status</h1>
+						<p>
+							Rollout: This site is currently being rolled out till 1/18/09. 
+						</p>
+					</div>
+					<asp:ContentPlaceHolder ID="main" runat="server" />
+				</div>
+				<div class="column sidebar">
+					<asp:ContentPlaceHolder ID="sidebar" runat="server" />
+				</div>
+			</div>
+            <div id="footer" class="section footer behavior-curved">
+				amptools &copy; 2008
+            </div>  
+        </div>
+    </div>
+    <script type="text/javascript" src="~/javascripts/jquery-1.2.6.js"></script>
+    <script type="text/javascript">
+		if($.browser.msie) {
+			document.namespaces.add("v", "urn:schemas-microsoft-com:vml");
+			var index = 1;
+			var temp = function(i, item) {
+				if (item) {
+
+					var style = item.currentStyle, classes = item.className, id = item.id;
+					var div = item;
+					var arcSize = Math.min(parseInt(this.currentStyle['-moz-border-radius'] ||
+                                    this.currentStyle['moz-border-radius'] ||
+                                    this.currentStyle['border-radius']) /
+                           Math.min(this.offsetWidth, this.offsetHeight), 1);
+					var strokeColor = item.currentStyle.borderColor; var strokeWeight = item.currentStyle.borderWidth; item.style.border = 'none';
+					var fillColor = item.currentStyle.backgroundColor; var fillSrc = item.currentStyle.backgroundImage.replace(/^url\("(.+)"\)$/, '$1');
+
+					var margin = item.currentStyle.margin; item.style.margin = '0';
+					var styleFloat = item.currentStyle.styleFloat; item.style.styleFloat = 'left';
+					var clear = item.currentStyle.clear; item.style.clear = 'none';
+					var position = item.currentStyle.position; item.style.position = 'static';
+					var left = item.currentStyle.left; item.style.left = '0';
+					var right = item.currentStyle.right; item.style.right = '0';
+					var top = item.currentStyle.top; item.style.top = '0';
+					var bottom = item.currentStyle.bottom; item.style.bottom = '0';
+					var width = item.currentStyle.width;
+					var height = item.currentStyle.height;
+					item.style.border = "";
+					item.style.padding = "0";
+					item.className = "";
+					item.id = "";
+					item.outerHTML = '<v:roundrect id="' + id + '" class="' + classes + '" style="behavior: url(#default#VML); border: none; display: inline-block; background:transparent;' +
+				 'margin:' + margin + '; padding: ' + item.currentStyle['-moz-border-radius']
+                                     + ';  width: 100%; height: 100%; z-index: '+ index +' " arcsize="' + arcSize + '" fillcolor="' +
+					 fillColor + '" strokecolor="' + strokeColor + '" strokeweight=' + strokeWeight + '>' + item.outerHTML + "</v:roundrect>";
+
+
+				}
+			}
+			$(".behavior-curved").each(temp);
+			$(".behavior-inner-curved").each(temp);
+    	}
+    </script>
+	<asp:ContentPlaceHolder ID="Javascript" runat="server" />
+</body>
+</html>

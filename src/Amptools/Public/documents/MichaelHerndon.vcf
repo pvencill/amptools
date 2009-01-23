@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Herndon;Michael
+FN:Michael Herndon
+ORG:Opensource Connections
+TITLE:Senior Developer
+NOTE;ENCODING=QUOTED-PRINTABLE:http://www.opensourceconnections.com=0D=0Ahttp://www.amptools.net=0D=0Ahttp:=
+//www.myspace.com/amptools
+TEL;WORK;VOICE:1.888.639.4445
+ADR;WORK:;;609 E Market St;Charlottesville;Va;22902;US
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:609 E Market St=0D=0ACharlottesville, Va 22902=0D=0AUS
+URL;HOME:http://www.amptools.net
+EMAIL;PREF;INTERNET:mherndon@amptools.net
+EMAIL;INTERNET:mherndon@opensourceconnections.com
+REV:20090112T073207Z
+END:VCARD

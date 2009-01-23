@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amptools", "Amptools\Amptools.csproj", "{F916C034-433D-4A32-9605-D8CBEAEE0226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amptools.Tests", "Amptools.Tests\Amptools.Tests.csproj", "{0C672F8C-3867-4841-8AEE-06E6604F1AC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F916C034-433D-4A32-9605-D8CBEAEE0226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F916C034-433D-4A32-9605-D8CBEAEE0226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F916C034-433D-4A32-9605-D8CBEAEE0226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F916C034-433D-4A32-9605-D8CBEAEE0226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C672F8C-3867-4841-8AEE-06E6604F1AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C672F8C-3867-4841-8AEE-06E6604F1AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C672F8C-3867-4841-8AEE-06E6604F1AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C672F8C-3867-4841-8AEE-06E6604F1AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

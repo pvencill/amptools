@@ -1,0 +1,249 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F916C034-433D-4A32-9605-D8CBEAEE0226}</ProjectGuid>
+    <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Amptools</RootNamespace>
+    <AssemblyName>Amptools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC Beta\Assemblies\System.Web.Abstractions.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC Beta\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC Beta\Assemblies\System.Web.Routing.dll</HintPath>
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\Controllers\AccountController.cs" />
+    <Compile Include="App\Controllers\AppController.cs" />
+    <Compile Include="App\Controllers\BlogController.cs" />
+    <Compile Include="App\Controllers\HomeController.cs" />
+    <Compile Include="App\Helpers\AjaxHelper.cs" />
+    <Compile Include="App\Helpers\ControllerHelper.cs" />
+    <Compile Include="App\Helpers\HtmlHelper.cs" />
+    <Compile Include="App\Helpers\PageHelper.cs" />
+    <Compile Include="Config\Mapping.cs" />
+    <Compile Include="Config\MvcApplication.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lib\RyuuViewEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\Views\Account\ChangePassword.aspx" />
+    <Content Include="App\Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="App\Views\Account\Login.aspx" />
+    <Content Include="App\Views\Account\Register.aspx" />
+    <Content Include="App\Views\Home\about.aspx" />
+    <Content Include="App\Views\Home\index.aspx" />
+    <Content Include="App\Views\Layouts\Error.aspx" />
+    <Content Include="App\Views\Layouts\LoginUserControl.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\Views\Home\projects.aspx" />
+    <Content Include="Public\2008\04\gallio-mb-unit-3-with-bdd-style-tests-i_05.aspx" />
+    <Content Include="Public\2008\04\test-posting.aspx" />
+    <Content Include="Public\2008\04\thoughts-on-developing-linq-to-sql.aspx" />
+    <Content Include="Public\2008\06\pursuit-of-rails-like-active-record-for.aspx" />
+    <Content Include="Public\2008\07\amplify-twittern-yet-another-c-twitter.aspx" />
+    <Content Include="Public\2008\07\amplify-wcf-twitter-api-client-library.aspx" />
+    <Content Include="Public\2008\07\determining-developmenttesting-mode-in.aspx" />
+    <Content Include="Public\2008\07\sample-mixins-for-httprequestbase-to.aspx" />
+    <Content Include="Public\2008\07\use-c-to-determine-where-and-what.aspx" />
+    <Content Include="Public\2008\07\using-wcf-to-access-flickr-json-api.aspx" />
+    <Content Include="Public\2008\08\ampliy-fusion-javascript-libraries.aspx" />
+    <Content Include="Public\2008\08\getting-datadirectory-folder-in-c-sharp.aspx" />
+    <Content Include="Public\2008\10\gallio-and-mb-unit-release-v304.aspx" />
+    <Content Include="Public\2008\10\moving-amplify-to-git-hub.aspx" />
+    <Content Include="Public\2008\11\simple-log-in-amplify.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_03_30_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_04_06_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_06_08_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_07_06_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_07_13_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_07_20_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_07_27_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_08_03_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_08_10_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_10_26_index.aspx" />
+    <Content Include="Public\blogs\michaelherndon\archives\2008_11_02_index.aspx" />
+    <Content Include="Public\images\social\facebook-letter.png" />
+    <Content Include="Public\images\social\facebook.png" />
+    <Content Include="Public\images\social\myspace-letter.png" />
+    <Content Include="Public\images\social\myspace.png" />
+    <Content Include="Public\images\social\skype.png" />
+    <Content Include="Public\images\social\SkypeBlue_256x256.png" />
+    <Content Include="Public\images\social\twitter.png" />
+    <Content Include="Public\index.aspx" />
+    <Content Include="Public\labels\Active Record.aspx" />
+    <Content Include="Public\labels\Amplify.aspx" />
+    <Content Include="Public\labels\Asp.Net Mvc.aspx" />
+    <Content Include="Public\labels\Asp.Net.aspx" />
+    <Content Include="Public\labels\BDD.aspx" />
+    <Content Include="Public\labels\Behavior Driven Development.aspx" />
+    <Content Include="Public\labels\BHAG.aspx" />
+    <Content Include="Public\labels\C#.aspx" />
+    <Content Include="Public\labels\Code.aspx" />
+    <Content Include="Public\labels\CSharp.aspx" />
+    <Content Include="Public\labels\DataContractJsonSerializer.aspx" />
+    <Content Include="Public\labels\Flickr.aspx" />
+    <Content Include="Public\labels\Gallio.aspx" />
+    <Content Include="Public\labels\Java.aspx" />
+    <Content Include="Public\labels\Javascript.aspx" />
+    <Content Include="Public\labels\JSON.aspx" />
+    <Content Include="Public\labels\Linq To Sql.aspx" />
+    <Content Include="Public\labels\Linq.aspx" />
+    <Content Include="Public\labels\Mb-Unit.aspx" />
+    <Content Include="Public\labels\Mixins.aspx" />
+    <Content Include="Public\labels\Mock Objects.aspx" />
+    <Content Include="Public\labels\Moq.aspx" />
+    <Content Include="Public\labels\Rails.aspx" />
+    <Content Include="Public\labels\REST.aspx" />
+    <Content Include="Public\labels\Twitter.aspx" />
+    <Content Include="Public\labels\Unit Testing.aspx" />
+    <Content Include="Public\labels\WCF.aspx" />
+    <Content Include="App\Views\Home\contact.aspx" />
+    <Content Include="App\Views\Home\wiki.aspx" />
+    <Content Include="App\Views\Home\_feeds.ascx" />
+    <Content Include="App\Views\Home\_sidebar.ascx" />
+    <Content Include="App\Views\Home\_social.ascx" />
+    <Content Include="App\Views\Home\_twitter.ascx" />
+    <Content Include="App\Views\Layouts\Admin.Master" />
+    <Content Include="App\Views\Layouts\Site.Master" />
+    <Content Include="App\Views\Web.config" />
+    <Content Include="Public\Default.aspx" />
+    <Content Include="Public\documents\MichaelHerndon.vcf" />
+    <Content Include="Public\favicon.ico" />
+    <Content Include="Public\javascripts\syntax-highlighter\clipboard.swf" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushCpp.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushCSharp.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushCss.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushDelphi.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushJava.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushJScript.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushPhp.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushPython.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushRuby.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushSql.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushVb.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shBrushXml.js" />
+    <Content Include="Public\javascripts\syntax-highlighter\shCore.js" />
+    <Content Include="Public\themes\stealth\css\ie.css" />
+    <Content Include="Public\themes\stealth\css\syntax-highlighter.css" />
+    <Content Include="Public\themes\stealth\images\header-nav-bg.png" />
+    <Content Include="Public\themes\stealth\images\logo.png" />
+    <Content Include="Public\javascripts\jquery-1.2.6.js" />
+    <Content Include="Public\javascripts\jquery-1.2.6.min.js" />
+    <Content Include="Public\javascripts\MicrosoftAjax.debug.js" />
+    <Content Include="Public\javascripts\MicrosoftAjax.js" />
+    <Content Include="Public\javascripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Public\javascripts\MicrosoftMvcAjax.js" />
+    <Content Include="Public\robots.txt" />
+    <Content Include="Public\stylesheets\border-radius.htc" />
+    <Content Include="Public\stylesheets\html5.css" />
+    <Content Include="Public\stylesheets\layout.css" />
+    <Content Include="Public\themes\stealth\css\theme.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\Models\" />
+    <Folder Include="App\Views\Admin\" />
+    <Folder Include="App\Views\Blog\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Db\" />
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26298</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
